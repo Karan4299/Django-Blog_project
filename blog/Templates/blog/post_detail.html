@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+        <h1 class="post-title ">{{ post.title }}</h1>
+        {% if post.published_date %}
+            <div class="data postdata">
+                {{ post.published_date }}
+            </div>
+        {% else %}
+
+        {% endif %}
+
+        <p class="postcontent">{{ post.text }}</p>
+
+        {% if user.is_authenticated %}
+            <div class="butt">
+                <div class="btn-left">
+                    {% if not post.published_date %}
+                      <a href="{% url 'blog:post_publish' pk=post.pk %}" class="btn btn-primary">Publish</a>
+                    {% endif %}
+                </div>
+                <div class="btn-right">
+                    <a href="{% url 'blog:post_update' pk=post.pk%}" class="btn btn-warning "><span class="glyphicon glyphicon-edit"></span></a>
+                    <a href="{% url 'blog:post_delete' pk=post.pk %}" class="btn btn-danger  "><span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+            </div>
+        {% endif %}
+         <div>
+            <form action="{% url 'blog:comment' pk=post.pk%}" method="post">
+                {% csrf_token %}
+                <textarea name="text" id="" class="textarea" cols="60" rows="4" placeholder="Comments"></textarea>
+                <input type="submit" Value="Post">
+            </form>
+<!--            <a href="{% url 'blog:comment' pk=post.pk %}">Add Comments</a>-->
+        </div>
+
+        <div class="comments">
+<!--            {{ post.comments.all }}-->
+            {% for comment in post.comments.all %}
+<!--                <hr style="color:red">-->
+                <div class="commdet">
+                    {% if user.is_authenticated or comment.comment_approve %}
+                        <p class="createdate cmmt">{{ comment.create_date }}</p>
+                        {% if not comment.comment_approve %}
+                            <div class="btn-right">
+                                   <a href="{% url 'blog:comment_approve' pk=comment.pk %}" class="btn btn-default "><span class="glyphicon glyphicon-ok"></span></a>
+                                    <a href="{% url 'blog:comment_remove' pk=comment.pk %}" class="btn btn-danger  "><span class="glyphicon glyphicon-remove"></span></a>
+                            </div>
+                        {% else %}
+
+                        {% endif %}
+                        <p>{{ comment.text }}</p>
+                        <p>By: {{ comment.author }}</p>
+                    {% endif %}
+                </div>
+            {% empty %}
+                    <p>No Comments</p>
+
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+{% endblock %}

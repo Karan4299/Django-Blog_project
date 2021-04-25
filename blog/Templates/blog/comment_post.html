@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Add Comment">
+<!--                <a href="{% url 'blog:post_detail' pk=post.pk %}" class="btn btn-primary">Cancel</a>-->
+            </form>
+        </div>
+    </div>
+{% endblock %}

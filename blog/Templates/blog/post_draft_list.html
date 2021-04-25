@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Drafts</h1>
+            {% for post in DraftL %}
+                {% if not post.published_date %}
+                    <div class="post-draft">
+                        <hr>
+                        <p class="createdate">{{ post.creation_date }}</p>
+                        <h2 class="post-title">{{ post.title }}</h2>
+
+                        {% if user.is_authenticated %}
+                        <div class="butt">
+                            <div class="btn-left">
+                                <a href="{% url 'blog:post_publish' pk=post.pk %}" class="btn btn-primary">Publish</a>
+                            </div>
+                            <div class="btn-right">
+                                <a href="{% url 'blog:post_update' pk=post.pk %}" class="btn btn-warning "><span class="glyphicon glyphicon-edit"></span></a>
+                                <a href="{% url 'blog:post_delete' pk=post.pk %}" class="btn btn-danger  "><span class="glyphicon glyphicon-remove"></span></a>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+    </div>
+{% endblock %}

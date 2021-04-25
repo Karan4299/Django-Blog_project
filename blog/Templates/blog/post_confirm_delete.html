@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <p>Are you sure you want to delete {{ post.title }}</p>
+        <input type="submit" class="btn btn-warning" value="Delete">
+    </form>
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Welcome to Blog</h1>
+        <div class="liner">
+        {% for post in ListL %}
+            {% if post.published_date %}
+                <div class="post-draft">
+                    <p class="createdate">{{ post.published_date }}</p>
+                    <h1><a href="" class="post-title"> <b> {{ post.title }} </b></a></h1>
+                    <p>{{ post.text|truncatechars:255 }}</p>
+                    <div class="butt">
+                        {% if user.is_authenticated %}
+                            <div class="btn-left">
+                                <a href="{% url 'blog:post_update' pk=post.pk %}" class="btn btn-warning "><span class="glyphicon glyphicon-edit"></span></a>
+                                <a href="{% url 'blog:post_delete' pk=post.pk %}" class="btn btn-danger  "><span class="glyphicon glyphicon-remove"></span></a>
+
+                            </div>
+                            <div class="btn-right">
+                                <a href="{% url 'blog:post_detail' pk=post.pk %}" class="btn btn-primary">Read</a>
+                            </div>
+                        {% else %}
+                           <div class="btn-right">
+                                <a href="{% url 'blog:post_detail' pk=post.pk %}" class="btn btn-primary">Read</a>
+                            </div>
+                        {% endif %}
+                     </div>
+                    <a href="{% url 'blog:post_detail' pk=post.pk %}" class="comm">Comments: {{ post.comments.count }}</a>
+                </div>
+        <p></p>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

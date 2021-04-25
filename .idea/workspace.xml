@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2b481da-7a46-49d2-816c-ba4eb092cd19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/First_clone.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First_clone/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First_clone/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First_clone/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First_clone/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/First_clone/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/comment_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_draft_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/blog/post_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/Templates/registeration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0002_auto_20200711_0035.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/0003_auto_20200714_2100.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1eg5ucTHd6ehsTdKF8zWcSkqdjV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2b481da-7a46-49d2-816c-ba4eb092cd19" name="Default Changelist" comment="" />
+      <created>1594730618249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594730618249</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="203" key="FileChooserDialogImpl" timestamp="1600180452416">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="549" y="203" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1600180452416" />
+    <state x="465" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1599216740261">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="465" y="273" key="com.intellij.ide.util.TipDialog/0.30.1536.834@0.30.1536.834" timestamp="1599216740261" />
+  </component>
+</project>
